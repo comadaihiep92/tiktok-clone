@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './Video.css'
 import VideoFooter from './VideoFooter';
+import VideoSidebar from './VideoSidebar';
 
 function Video(props) {
     const [playing, setPlaying] = useState(false);
@@ -22,8 +23,9 @@ function Video(props) {
             onClick={onVideoPress}
             ref={videoRef}
             className="video__player" 
-            src="https://v16.tiktokcdn.com/95be9ffc5226c3b3de2c815a01f06469/6033ab4c/video/tos/alisg/tos-alisg-pve-0037/1e274b99c13a4afc8ab019e8a8659c77/?a=1180&br=2556&bt=1278&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=3&ds=3&er=&l=202102220701520102341080983A010C76&lr=tiktok&mime_type=video_mp4&pl=0&qs=0&rc=MzhqOGY7dXhnMzMzaTgzM0ApaTk4Mzk7ZGRlNzU6ZGY4OWcwY28uLi9xX2hgLS1hLzRzcy01LS1fYDNjLWNhLS01LjI6Yw%3D%3D&vl=&vr="></video>
-            <VideoFooter />
+            src="https://v9-vn.tiktokcdn.com/e28454e878f2684a2743cbc91bdf11af/6034c665/video/tos/alisg/tos-alisg-pve-0037c001/0135cb86bd7845db8e9d247fc166e9af/?a=1180&br=1518&bt=759&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=3&ds=3&er=&l=202102230307260101150452321E00518A&lr=tiktok&mime_type=video_mp4&pl=0&qs=0&rc=M3M4eW1nZDU6eTMzNDgzM0ApZzRoNTNlOWVlN2VkNzk0aGdmZmtjNDNecmhfLS0xLzRzc15hLTMyMTJgMWIxXjAuLmM6Yw%3D%3D&vl=&vr="></video>
+            <VideoFooter channel="windreviewphim" description="Con bò bá đạo nhất hệ mặt trời" song="haha hohoho có con bò kéo xe kìa!"/>
+            <VideoSidebar likes="2000" comments="500" shares="400"/>
         </div>
     );
 }
